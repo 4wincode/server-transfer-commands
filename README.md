@@ -1,6 +1,6 @@
 # Server Transfer Commands
 
-This mod adds commands to transfer yourself or another player to a different server using the new transfer packet added in 24w03a. The commands and config are loosely based on BungeeCord, so they should be familar if you've used it or a similar proxy before.
+This mod adds commands to transfer yourself or another player to a different server using the new transfer packet added in 24w03a. The commands and config are loosely based on BungeeCord, so they should be familiar if you've used it or a similar proxy before.
 
 This mod does not expose an API for transferring players or setting/getting cookies; it just sends the packet. This is something that may be added in the near future, though.
 
