@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "server-transfer-commands",
+  "name": "Server Transfer Commands",
+  "version": "${version}",
+  "environment": "server",
+  "license": "MIT",
+  "icon": "assets/server-transfer-commands/icon.png",
+  "description": "Adds proxy-style commands like /server and /send using the new transfer packet.",
+  "authors": ["4win"],
+  "contact": {
+    "sources": "https://github.com/4wincode/server-transfer-commands",
+    "issues": "https://github.com/4wincode/server-transfer-commands/issues"
+  },
+  "entrypoints": {
+    "server": [
+      "us.mcnex.servertransfercommands.ServerTransferCommands"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api-base": "*",
+    "fabric-command-api-v2": "*"
+  }
+}

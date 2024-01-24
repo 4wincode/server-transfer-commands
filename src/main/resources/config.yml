@@ -1,0 +1,35 @@
+# The list of servers that can be accessed with /server or /send.
+# If "restricted" is true, the "server-transfer-commands.server.<server>" permission is required to access it with /server.
+servers:
+  lobby:
+    address: localhost:25565
+    restricted: false
+  survival:
+    address: localhost:25564
+    restricted: false
+
+# A server that should show "You are already connected to this server!" when you attempt to transfer to it.
+this_server: lobby
+
+# Commands that should not be registered.
+disabled_commands:
+  - disabledcommandhere
+
+# Permission groups for assigning to players or permission levels.
+permissions:
+  default:
+    - server-transfer-commands.command.server
+  admin:
+    - server-transfer-commands.command.send
+    - server-transfer-commands.command.send-ip
+
+# Permission groups assigned to specific players.
+groups:
+  4win:
+    - admin
+
+# Permission groups assigned to Minecraft permission levels, normally from 1 to 4.
+# Level 3 is what allows use of multiplayer management commands such as /kick.
+level_groups:
+  3:
+    - admin
